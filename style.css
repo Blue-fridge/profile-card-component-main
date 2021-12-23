@@ -1,0 +1,98 @@
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    background-color: hsl(185, 75%, 39%);
+    overflow: hidden;
+}
+/* Background circles */
+.top-circle{
+    position: absolute;
+    bottom: 45%;
+    right: 50%;
+}
+.bottom-circle{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+}
+/* main card */
+main{
+    width: 28%;
+    border-radius: 10px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* main card background pic */
+.card-top-image{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+/* victor profile pic*/
+.victor{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 7px solid white;
+}
+/* text */
+h1{
+    text-align: center;
+    margin-top: -50px;
+    font-size: 2rem;
+}
+span{
+    text-align: center;
+    font-size: 0.8em;
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+}
+.london{
+    margin-top: -15px;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+}
+/* stats */
+section{
+    width: 25%;
+    float:left;
+    font-size: 1rem;
+    text-align: center;
+    margin-left: 20px;
+} 
+section p{
+    color: hsl(0, 0%, 59%);
+    margin-top: -15px;
+}
+@media only screen and (max-width: 375px) {
+    body {
+        overflow-y: hidden; /* Hide vertical scrollbar */
+        overflow-x: hidden; /* Hide horizontal scrollbar */
+      }
+    main{
+        width: 90%;
+        position: absolute;
+        top: 50%;
+        left: 54.8%;
+        transform: translate(-50%,-50%);
+    }
+    /* Background circles */
+    .top-circle{
+    position: absolute;
+    bottom: 45%;
+    right: 30%;
+    }
+    .bottom-circle{
+        position: absolute;
+        top: 45%;
+        left: 30%;
+    }
+  }
