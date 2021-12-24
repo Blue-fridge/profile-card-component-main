@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+  }  
 body{
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 18px;
@@ -72,13 +75,13 @@ section p{
     color: hsl(0, 0%, 59%);
     margin-top: -15px;
 }
-@media only screen and (max-width: 375px) {
-    body {
-        overflow-y: hidden; /* Hide vertical scrollbar */
-        overflow-x: hidden; /* Hide horizontal scrollbar */
+@media screen and (max-width: 375px) {
+    html, body {
+        height: 100vh;
+         overflow-y: hidden;
       }
     main{
-        width: 90%;
+        width: 70%;
         position: absolute;
         top: 50%;
         left: 54.8%;
@@ -89,10 +92,12 @@ section p{
     position: absolute;
     bottom: 45%;
     right: 30%;
+    width: 350px;
     }
     .bottom-circle{
         position: absolute;
-        top: 45%;
-        left: 30%;
+        top: 80%;
+        left: 45%;
+        object-fit: cover;
     }
   }
